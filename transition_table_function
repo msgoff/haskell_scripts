@@ -1,0 +1,1 @@
+let f x n = [y | y <- [if x - n > 0 then x-n else 0,if (x-1) `mod` n /= 0 then x-1 else 0,if x `mod` n /= 0 then x+1 else 0, if x+n < n*n then x+n else 0],y>0]
